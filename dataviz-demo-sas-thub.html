@@ -1,0 +1,40 @@
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Sample SAS® Viya®</title>
+
+
+<script async src="https://unpkg.com/@sassoftware/va-report-components@0.7.2/dist/umd/va-report-components.js"></script>
+<style>
+	.small-content {
+		margin: 2rem 0 2rem 0;
+		width: 100%;
+		height: 500px;
+	}
+
+	sas-report-object {
+		width: 100%;
+		height: 100%;
+	}
+</style>
+
+<body>
+
+	<!--Initial Text -->
+  
+	    <div id="main" class="container">
+
+<!-- For the DEMO -->
+<h1>2019 Novel Coronavirus</h1>
+<p>CRA demo: sas-report-page</p>
+<sas-report-page pageName="vi338" authenticationType="guest" url="https://viya.openplus.ca" reportUri="/reports/reports/03d77d73-a2c1-44d2-9ab5-e2aff29df971"></sas-report-page>
+<p>CRA demo: sas-report</p>
+<sas-report hideNavigation="auto" authenticationType="guest" url="https://viya.openplus.ca" reportUri="/reports/reports/a77951d9-34bc-452d-83de-d563d074604a"></sas-report>
+
+</body>
+</html>
