@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
 <!--<![endif]-->
 <head>
@@ -7,6 +7,31 @@
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 <title>Content page - Canada.ca
 </title>
+	<!-- SaS Viya script load START 7.2 seems best -->
+	<script async src="https://unpkg.com/@sassoftware/va-report-components@0.7.2/dist/umd/va-report-components.js"></script>
+	<style>
+		.small-content {
+			margin: 2rem 0 2rem 0;
+			width: 100%;
+			height: 200px;
+		}
+		.medium-content {
+			margin: 2rem 0 2rem 0;
+			width: 100%;
+			height: 500px;
+		}
+		sas-report {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+		sas-report-object {
+		width: 100%;
+		height: 100%;
+		display: block;
+		}
+	</style>
+	<!-- SaS Viya custom END -->
 <meta content="width=device-width,initial-scale=1" name="viewport">
 <meta name="description" content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
 <!--[if gte IE 9 | !IE ]><!-->
@@ -418,10 +443,12 @@
 	<!-- Accordion section 3 -->
 		<details class="acc-group">
 			<summary class="wb-toggle tgl-tab" data-toggle='{"parent": ".accordion", "group": ".acc-group"}'>Table 1: Visualizations</summary>
-			<div class="tgl-panel">Visualizations</div>
+			<div class="tgl-panel">
+				<sas-report-page pageName="vi338" authenticationType="guest" url="https://viya.openplus.ca" reportUri="/reports/reports/3d681a41-d18f-49df-82b3-d6d424afce45"></sas-report-page>
+			</div>
 		</details>
 </div>
-	
+
     
 
 
@@ -694,4 +721,3 @@
 		<![endif]-->
 <script src="./GCWeb/js/theme.min.js"></script>
 </body>
-</html>
